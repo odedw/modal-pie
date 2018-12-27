@@ -10,8 +10,8 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-            <Route path="/" exact component={ModesChartView} />
-            <Route path="/:name" component={ModeView} />
+            <Route path={process.env.PUBLIC_URL + '/'} exact component={ModesChartView} />
+            <Route path={process.env.PUBLIC_URL + '/:name'} component={ModeView} />
           </header>
         </div>
       </Router>
