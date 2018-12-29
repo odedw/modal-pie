@@ -1,0 +1,61 @@
+{
+  "modes": [
+    {
+      "name": "ionian",
+      "tags": ["bright", "happy", "melodic", "joyous"],
+      "intervals": ["W", "W", "H", "W", "W", "W", "H"],
+      "chords": ["maj7", "-7", "-7", "maj7", "7", "-7", "-7(b5)"],
+      "noteInterest": [6],
+      "chortdInterest": []
+    },
+    {
+      "name": "dorian",
+      "tags": ["mellow", "smooth", "minor-ish"],
+      "intervals": ["W", "H", "W", "W", "W", "H", "W"],
+      "chords": ["-7", "-7", "bmaj7", "7", "-7", "-7(b5)", "bmaj7"],
+      "noteInterest": [5],
+      "chortdInterest": []
+    },
+    {
+      "name": "phrygian",
+      "tags": ["exotic", "creepy", "dark", "tense"],
+      "intervals": ["H", "W", "W", "W", "H", "W", "W"],
+      "chords": ["-7", "bmaj7", "b7", "-7", "-7(b5)", "bmaj7", "b-7"],
+      "noteInterest": [1],
+      "chortdInterest": []
+    },
+    {
+      "name": "lydian",
+      "tags": ["floaty", "quirky", "sci-fi", "spacy"],
+      "intervals": ["W", "W", "W", "H", "W", "W", "H"],
+      "chords": ["maj7", "7", "-7", "#-7(b5)", "maj7", "-7", "-7"],
+      "noteInterest": [3],
+      "chortdInterest": []
+    },
+    {
+      "name": "mixolydian",
+      "tags": ["bright", "upbeat", "rock-ish", "irish"],
+      "intervals": ["W", "W", "H", "W", "W", "H", "W"],
+      "chords": ["7", "-7", "-7(b5)", "maj7", "-7", "-7", "bmaj7"],
+      "noteInterest": [6],
+      "chortdInterest": []
+    },
+    {
+      "name": "aeolian",
+      "tags": ["dark", "rock", "sad-ish"],
+      "intervals": ["W", "H", "W", "W", "H", "W", "W"],
+      "chords": ["-7", "-7(b5)", "bmaj7", "-7", "-7", "bmaj7", "b7"],
+      "noteInterest": [5],
+      "chortdInterest": []
+    },
+    {
+      "name": "locrian",
+      "tags": [],
+      "intervals": ["H", "W", "W", "H", "W", "W", "W"],
+      "chords": ["-7(b5)", "bmaj7", "b-7", "-7", "bmaj7", "b7", "b-7"],
+      "noteInterest": [],
+      "chortdInterest": []
+    }
+  ],
+  "allowedRootNote":["A", "Ab", "A#", "B", "Bb", "C", "Cb", "C#", "D", "Db", "D#", "E", "Eb", "F", "F#", "G", "Gb", "G#"]
+}

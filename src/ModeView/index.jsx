@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
-const modes = require("../modes.json");
+const modes = require("../data.json").modes;
 
 const Container = styled.div`
   display: flex;
@@ -59,20 +59,22 @@ const ModeView = ({ match }) => {
   return (
     <Container>
       <ModeNames>
-        {modes.map(m => m.name).map((name, i) => (
-          <>
-            <Link to={`/${name}`}>
-              <ModeName
-                className={name === match.params.name ? "selected" : ""}
-              >
-                <h3>{name}</h3>
-              </ModeName>
-            </Link>
-            {i === modes.length - 1 ? null : (
-              <ModeNameSeparator>/</ModeNameSeparator>
-            )}
-          </>
-        ))}
+        {modes
+          .map(m => m.name)
+          .map((name, i) => (
+            <>
+              <Link to={`/${name}`}>
+                <ModeName
+                  className={name === match.params.name ? "selected" : ""}
+                >
+                  <h3>{name}</h3>
+                </ModeName>
+              </Link>
+              {i === modes.length - 1 ? null : (
+                <ModeNameSeparator>/</ModeNameSeparator>
+              )}
+            </>
+          ))}
       </ModeNames>
       <ModeTags>
         {mode.tags.map((tag, i) => (
